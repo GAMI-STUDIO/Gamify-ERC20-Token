@@ -13,3 +13,27 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+# Gami Token
+
+This project demonstrates a basic ERC-20 Token named Gami with burn funcionality.
+
+# Deploy 
+npx hardhat run --network testnet scripts/deploy.js  
+npx hardhat run --network mainnet scripts/deploy.js  
+
+# Compile 
+npx hardhat compile  
+
+# Flatten
+npx hardhat flatten contracts/token.sol > FlatGamiTestToken.sol
+
+# Openzeppelin Contracts
+
+npm install --save-dev @openzeppelin/contracts   
+npm i @openzeppelin/contracts-upgradeable 
+npm install -g npm    
+npx hardhat / npm install hardhat
+
+npm install --save-dev @nomiclabs/hardhat-etherscan
+npx hardhat  verify --network testnet 0x358808491a95049FCf9F5327f7BAeaB0d60DA6F0
+
