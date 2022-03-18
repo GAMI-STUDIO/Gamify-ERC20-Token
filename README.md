@@ -40,3 +40,4 @@ npx hardhat  verify --network testnet 0x358808491a95049FCf9F5327f7BAeaB0d60DA6F0
 # Update all packages
 
 npm i -g npm-check-updates
+npm install

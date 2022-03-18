@@ -1,7 +1,18 @@
+/**
+ *Submitted for verification at BscScan.com on 2022-03-15
+*/
+
+/**
+ *Submitted for verification at BscScan.com on 2022-03-14
+*/
 
 // SPDX-License-Identifier: MIT
+// File: @openzeppelin/contracts/utils/math/SafeCast.sol
 
-pragma solidity ^0.8.4;
+
+// OpenZeppelin Contracts v4.4.1 (utils/math/SafeCast.sol)
+
+pragma solidity ^0.8.0;
 
 /**
  * @dev Wrappers over Solidity's uintXX/intXX casting operators with added overflow
@@ -240,6 +251,12 @@ library SafeCast {
     }
 }
 
+// File: @openzeppelin/contracts/governance/utils/IVotes.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (governance/utils/IVotes.sol)
+pragma solidity ^0.8.0;
+
 /**
  * @dev Common interface for {ERC20Votes}, {ERC721Votes}, and other {Votes}-enabled contracts.
  *
@@ -297,6 +314,13 @@ interface IVotes {
         bytes32 s
     ) external;
 }
+
+// File: @openzeppelin/contracts/utils/Strings.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (utils/Strings.sol)
+
+pragma solidity ^0.8.0;
 
 /**
  * @dev String operations.
@@ -360,6 +384,14 @@ library Strings {
         return string(buffer);
     }
 }
+
+// File: @openzeppelin/contracts/utils/cryptography/ECDSA.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (utils/cryptography/ECDSA.sol)
+
+pragma solidity ^0.8.0;
+
 
 /**
  * @dev Elliptic Curve Digital Signature Algorithm (ECDSA) operations.
@@ -585,6 +617,13 @@ library ECDSA {
     }
 }
 
+// File: @openzeppelin/contracts/utils/cryptography/draft-EIP712.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (utils/cryptography/draft-EIP712.sol)
+
+pragma solidity ^0.8.0;
+
 
 /**
  * @dev https://eips.ethereum.org/EIPS/eip-712[EIP 712] is a standard for hashing and signing of typed structured data.
@@ -684,6 +723,13 @@ abstract contract EIP712 {
     }
 }
 
+// File: @openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/draft-IERC20Permit.sol)
+
+pragma solidity ^0.8.0;
+
 /**
  * @dev Interface of the ERC20 Permit extension allowing approvals to be made via signatures, as defined in
  * https://eips.ethereum.org/EIPS/eip-2612[EIP-2612].
@@ -740,6 +786,12 @@ interface IERC20Permit {
     function DOMAIN_SEPARATOR() external view returns (bytes32);
 }
 
+// File: @openzeppelin/contracts/utils/Counters.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (utils/Counters.sol)
+
+pragma solidity ^0.8.0;
 
 /**
  * @title Counters
@@ -780,6 +832,12 @@ library Counters {
     }
 }
 
+// File: @openzeppelin/contracts/utils/math/Math.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (utils/math/Math.sol)
+
+pragma solidity ^0.8.0;
 
 /**
  * @dev Standard math utilities missing in the Solidity language.
@@ -820,7 +878,12 @@ library Math {
     }
 }
 
+// File: @openzeppelin/contracts/utils/Arrays.sol
 
+
+// OpenZeppelin Contracts v4.4.1 (utils/Arrays.sol)
+
+pragma solidity ^0.8.0;
 
 
 /**
@@ -865,6 +928,12 @@ library Arrays {
     }
 }
 
+// File: @openzeppelin/contracts/utils/Context.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
+
+pragma solidity ^0.8.0;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -886,6 +955,12 @@ abstract contract Context {
     }
 }
 
+// File: @openzeppelin/contracts/security/Pausable.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (security/Pausable.sol)
+
+pragma solidity ^0.8.0;
 
 
 /**
@@ -973,6 +1048,12 @@ abstract contract Pausable is Context {
     }
 }
 
+// File: @openzeppelin/contracts/access/Ownable.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (access/Ownable.sol)
+
+pragma solidity ^0.8.0;
 
 
 /**
@@ -1045,6 +1126,12 @@ abstract contract Ownable is Context {
     }
 }
 
+// File: @openzeppelin/contracts/token/ERC20/IERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)
+
+pragma solidity ^0.8.0;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -1124,7 +1211,12 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
+// File: @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol
 
+
+// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)
+
+pragma solidity ^0.8.0;
 
 
 /**
@@ -1148,6 +1240,14 @@ interface IERC20Metadata is IERC20 {
      */
     function decimals() external view returns (uint8);
 }
+
+// File: @openzeppelin/contracts/token/ERC20/ERC20.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/ERC20.sol)
+
+pragma solidity ^0.8.0;
+
 
 
 
@@ -1526,6 +1626,16 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     ) internal virtual {}
 }
 
+// File: @openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/draft-ERC20Permit.sol)
+
+pragma solidity ^0.8.0;
+
+
+
+
 
 
 /**
@@ -1604,6 +1714,15 @@ abstract contract ERC20Permit is ERC20, IERC20Permit, EIP712 {
         nonce.increment();
     }
 }
+
+// File: @openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/extensions/ERC20Votes.sol)
+
+pragma solidity ^0.8.0;
+
+
 
 
 
@@ -1847,6 +1966,15 @@ abstract contract ERC20Votes is IVotes, ERC20Permit {
     }
 }
 
+// File: @openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol
+
+
+// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/ERC20Snapshot.sol)
+
+pragma solidity ^0.8.0;
+
+
+
 
 /**
  * @dev This contract extends an ERC20 token with a snapshot mechanism. When a snapshot is created, the balances and
@@ -2035,6 +2163,15 @@ abstract contract ERC20Snapshot is ERC20 {
     }
 }
 
+// File: @openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol
+
+
+// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/extensions/ERC20Burnable.sol)
+
+pragma solidity ^0.8.0;
+
+
+
 /**
  * @dev Extension of {ERC20} that allows token holders to destroy both their own
  * tokens and those that they have an allowance for, in a way that can be
@@ -2067,11 +2204,21 @@ abstract contract ERC20Burnable is Context, ERC20 {
     }
 }
 
+// File: ERC20_flat.sol
+
+
+pragma solidity ^0.8.4;
 
 
 
-contract GamifyToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, ERC20Permit, ERC20Votes {
+
+
+
+
+
+contract BSCGamifyToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, ERC20Permit, ERC20Votes {
     constructor() ERC20("Gami Token", "GAMI") ERC20Permit("Gami Token") {
+        _mint(msg.sender, 1500000000 * 10 ** decimals());
     }
 
     function snapshot() public onlyOwner {
@@ -2084,10 +2231,6 @@ contract GamifyToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable, 
 
     function unpause() public onlyOwner {
         _unpause();
-    }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
     }
 
     function _beforeTokenTransfer(address from, address to, uint256 amount)
